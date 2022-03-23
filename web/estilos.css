@@ -1,0 +1,193 @@
+.fondo {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+    background-image: url('superfondo.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    filter: blur(15px);
+}
+
+.contenedor {
+    border-style: solid;
+    padding-top: 26vh;
+    padding-right: 29vh;
+    border-width: 2px;
+    border-color: red;
+    position: absolute;
+    background: url("./1.gif") no-repeat;
+    background-color: black;
+    background-size: 14vh;
+    margin-top: 35vh;
+    margin-left: 3%;
+    background-position: center;
+    background-position-y: 15%;
+    image-rendering: pixelated;
+    z-index: 1;
+    transition: 0.2s;
+}
+
+.contenedor2 {
+    border-style: solid;
+    padding-top: 26vh;
+    padding-right: 29vh;
+    border-width: 2px;
+    border-color: red;
+    position: absolute;
+    background: url("./1.gif") no-repeat;
+    background-color: black;
+    background-size: 14vh;
+    margin-top: 35vh;
+    margin-left: 20%;
+    background-position: center;
+    background-position-y: 15%;
+    image-rendering: pixelated;
+    z-index: 1;
+    transition: 0.2s;
+}
+
+.contenedor3 {
+    border-style: solid;
+    padding-top: 26vh;
+    padding-right: 29vh;
+    border-width: 2px;
+    border-color: red;
+    position: absolute;
+    background: url("./1.gif") no-repeat;
+    background-color: black;
+    background-size: 14vh;
+    margin-top: 35vh;
+    margin-left: 37%;
+    background-position: center;
+    background-position-y: 15%;
+    image-rendering: pixelated;
+    z-index: 1;
+    transition: 0.2s;
+}
+
+.contenedor4 {
+    border-style: solid;
+    padding-top: 26vh;
+    padding-right: 29vh;
+    border-width: 2px;
+    border-color: red;
+    position: absolute;
+    background: url("./1.gif") no-repeat;
+    background-size: 14vh;
+    margin-top: 35vh;
+    margin-left: 54%;
+    background-position: center;
+    background-position-y: 15%;
+    image-rendering: pixelated;
+    z-index: 1;
+    transition: 0.2s;
+}
+
+
+.contenedor > #test {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    height: 6vh;
+    top: 19.7vh;
+    left: 6vh;
+}
+
+.contenedor2 > #test {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    height: 6vh;
+    top: 19.7vh;
+    left: 6vh;
+}
+
+.contenedor3 > #test {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    height: 6vh;
+    top: 19.7vh;
+    left: 6vh;
+}
+
+.contenedor4 > #test {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    height: 6vh;
+    top: 19.7vh;
+    left: 6vh;
+}
+.contenedor:hover {
+    transition: 0.2s;
+    transform: scale(1.2);
+    background: url("./prone.png") no-repeat;
+    background-size: 14vh;
+    background-position: center;
+    background-position-y: 12.5%;
+    image-rendering: pixelated;
+    background-color: black;
+}
+
+.contenedor:hover > #test {
+    top: 21,05862vh;
+}
+
+.holo {
+    background-color: rgb(75, 0, 0);
+    padding: 20px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    padding-right: 4100px;
+    position: fixed;
+}
+
+.holo2 {
+    background-color: rgb(75, 0, 0);
+    padding: 20px;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    padding-left: 410px;
+    position: fixed;
+}
+
+.holo3 {
+    background-color: rgb(75, 0, 0);
+    padding: 20px;
+    padding-top: 3000px;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+}
+
+.holo4 {
+  background-color: rgb(75, 0, 0);
+    padding: 20px;
+    padding-top: 3000px;
+    top: 0px;
+    right: 0px;
+    
+    position: fixed;
+}
+
+@keyframes shake {
+    animation-duration: 2s;
+    0% {
+        transform: scale (1.2);   
+    }
+
+    50% {
+        transform: scale (1.3);
+    }
+
+    100% {
+        transform: scale (1.2);
+    }
+}
