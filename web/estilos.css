@@ -12,7 +12,7 @@
     filter: blur(15px);
 }
 
-.contenedor {
+.botones_doom > a {
     border-style: solid;
     padding-top: 26vh;
     padding-right: 29vh;
@@ -23,72 +23,13 @@
     background-color: black;
     background-size: 14vh;
     margin-top: 35vh;
-    margin-left: 3%;
     background-position: center;
     background-position-y: 15%;
     image-rendering: pixelated;
     z-index: 1;
-    transition: 0.2s;
 }
 
-.contenedor2 {
-    border-style: solid;
-    padding-top: 26vh;
-    padding-right: 29vh;
-    border-width: 2px;
-    border-color: red;
-    position: absolute;
-    background: url("./1.gif") no-repeat;
-    background-color: black;
-    background-size: 14vh;
-    margin-top: 35vh;
-    margin-left: 20%;
-    background-position: center;
-    background-position-y: 15%;
-    image-rendering: pixelated;
-    z-index: 1;
-    transition: 0.2s;
-}
-
-.contenedor3 {
-    border-style: solid;
-    padding-top: 26vh;
-    padding-right: 29vh;
-    border-width: 2px;
-    border-color: red;
-    position: absolute;
-    background: url("./1.gif") no-repeat;
-    background-color: black;
-    background-size: 14vh;
-    margin-top: 35vh;
-    margin-left: 37%;
-    background-position: center;
-    background-position-y: 15%;
-    image-rendering: pixelated;
-    z-index: 1;
-    transition: 0.2s;
-}
-
-.contenedor4 {
-    border-style: solid;
-    padding-top: 26vh;
-    padding-right: 29vh;
-    border-width: 2px;
-    border-color: red;
-    position: absolute;
-    background: url("./1.gif") no-repeat;
-    background-size: 14vh;
-    margin-top: 35vh;
-    margin-left: 54%;
-    background-position: center;
-    background-position-y: 15%;
-    image-rendering: pixelated;
-    z-index: 1;
-    transition: 0.2s;
-}
-
-
-.contenedor > #test {
+.botones_doom > a > #nivel {
     margin: 0;
     padding: 0;
     position: absolute;
@@ -97,33 +38,56 @@
     left: 6vh;
 }
 
-.contenedor2 > #test {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    height: 6vh;
-    top: 19.7vh;
-    left: 6vh;
+.botones_doom > #uno:hover ~ #ej1 {
+    animation-name: inicioActividad;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
 }
 
-.contenedor3 > #test {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    height: 6vh;
-    top: 19.7vh;
-    left: 6vh;
+.botones_doom > #dos:hover ~ #ej2 {
+    animation-name: inicioActividad;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
 }
 
-.contenedor4 > #test {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    height: 6vh;
-    top: 19.7vh;
-    left: 6vh;
+.botones_doom > #tres:hover ~ #ej3 {
+    animation-name: inicioActividad;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
 }
-.contenedor:hover {
+
+.botones_doom > #cuatro:hover ~ #ej4 {
+    animation-name: inicioActividad;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+.botones_doom > img {
+    position: absolute;
+    top: -100px;
+    scale: 1.5;
+    image-rendering: pixelated;
+    z-index: 1;
+    padding-left: 33%;
+}
+
+#uno {
+    margin-left: 13%;
+}
+
+#dos {
+    margin-left: 30%;
+}
+
+#tres {
+    margin-left: 47%;
+}
+
+#cuatro {
+    margin-left: 64%;
+}
+
+.botones_doom > a:hover {
     transition: 0.2s;
     transform: scale(1.2);
     background: url("./prone.png") no-repeat;
@@ -132,10 +96,6 @@
     background-position-y: 12.5%;
     image-rendering: pixelated;
     background-color: black;
-}
-
-.contenedor:hover > #test {
-    top: 21,05862vh;
 }
 
 .holo {
@@ -177,17 +137,12 @@
     position: fixed;
 }
 
-@keyframes shake {
-    animation-duration: 2s;
+@keyframes inicioActividad {
     0% {
-        transform: scale (1.2);   
-    }
-
-    50% {
-        transform: scale (1.3);
+        top: 0px;
     }
 
     100% {
-        transform: scale (1.2);
+        top: 150px;
     }
 }
