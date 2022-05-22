@@ -1,0 +1,148 @@
+.fondo {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+    background-image: url('superfondo.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    filter: blur(15px);
+}
+
+.botones_doom > a {
+    border-style: solid;
+    padding-top: 26vh;
+    padding-right: 29vh;
+    border-width: 2px;
+    border-color: red;
+    position: absolute;
+    background: url("./1.gif") no-repeat;
+    background-color: black;
+    background-size: 14vh;
+    margin-top: 35vh;
+    background-position: center;
+    background-position-y: 15%;
+    image-rendering: pixelated;
+    z-index: 1;
+}
+
+.botones_doom > a > #nivel {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    height: 6vh;
+    top: 19.7vh;
+    left: 6vh;
+}
+
+.botones_doom > #uno:hover ~ #ej1 {
+    animation-name: inicioActividad;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+.botones_doom > #dos:hover ~ #ej2 {
+    animation-name: inicioActividad;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+.botones_doom > #tres:hover ~ #ej3 {
+    animation-name: inicioActividad;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+.botones_doom > #cuatro:hover ~ #ej4 {
+    animation-name: inicioActividad;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+.botones_doom > img {
+    position: absolute;
+    top: -100px;
+    scale: 1.5;
+    image-rendering: pixelated;
+    z-index: 1;
+    padding-left: 33%;
+}
+
+#uno {
+    margin-left: 13%;
+}
+
+#dos {
+    margin-left: 30%;
+}
+
+#tres {
+    margin-left: 47%;
+}
+
+#cuatro {
+    margin-left: 64%;
+}
+
+.botones_doom > a:hover {
+    transition: 0.2s;
+    transform: scale(1.2);
+    background: url("./prone.png") no-repeat;
+    background-size: 14vh;
+    background-position: center;
+    background-position-y: 12.5%;
+    image-rendering: pixelated;
+    background-color: black;
+}
+
+.holo {
+    background-color: rgb(75, 0, 0);
+    padding: 20px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    padding-right: 4100px;
+    position: fixed;
+}
+
+.holo2 {
+    background-color: rgb(75, 0, 0);
+    padding: 20px;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    padding-left: 410px;
+    position: fixed;
+}
+
+.holo3 {
+    background-color: rgb(75, 0, 0);
+    padding: 20px;
+    padding-top: 3000px;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+}
+
+.holo4 {
+  background-color: rgb(75, 0, 0);
+    padding: 20px;
+    padding-top: 3000px;
+    top: 0px;
+    right: 0px;
+    
+    position: fixed;
+}
+
+@keyframes inicioActividad {
+    0% {
+        top: 0px;
+    }
+
+    100% {
+        top: 150px;
+    }
+}
