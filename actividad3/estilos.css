@@ -1,0 +1,27 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.fondo {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1;
+}
+
+.vid {
+	background-color: black;
+	cursor: pointer;
+	outline: none;
+	margin: 5vh;
+	transition: 0.2s;
+	border-radius: 1vh;
+	box-shadow: 1px 0px 20px 12px rgb(8, 8, 8);
+	max-height: 250px;
+	max-width: 500px;
+}
+
+.vid:hover {
+	transform: scale(1.2);
+}
