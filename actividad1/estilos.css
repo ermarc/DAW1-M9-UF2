@@ -1,58 +1,75 @@
+* {
+	margin: 0;
+	padding: 0;
+  scrollbar-color: grey orange;
+}
+
+
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: black;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.presentacion {
-    position: absolute;
-    padding-left: 300px;
-    scale: 2.2;
-    opacity: 0.6;
-    justify-content: center;
-    overflow: hidden;
-}
 
-html, body {margin: 0; height: 100%; overflow: hidden}
-.hola {
-    position: absolute;
-    top: 0;
-    left: 0;
+.imagen_lite { 
     width: 100%;
-}
-
-.imagen_lite {
-    padding-top: 19%;
-    gap: 2px;
+    background-color: orange;
+    position: absolute;
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 18%;
+    gap: 2%;
     overflow-x: auto;
-    
 }
 
+::-webkit-scrollbar {
+  height: 0.6vh;
+  background: orange;
+  
+}
+
+::-webkit-scrollbar-thumb {
+  background: grey;
+  transition: 0.2s;
+  -webkit-border-radius: 2ex;
+}
+::-webkit-scrollbar-thumb:hover {
+  transition: 2s;
+  background: rgb(77, 77, 77);
+  -webkit-border-radius: 2ex;
+  
+}
 
 .imagen_lite > img {
+    padding-top: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
     inline-size: 5px;
     padding-bottom: 2%;
     width: 100%;
-    scale: 1.2;
-    border-radius: 15px;
+    border-radius: 2vh;
     cursor: pointer;
     transition: 0.3s;
-    max-width:300px;
 }
 
 .imagen_lite > img:hover {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
-
+.fondo {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
 
 .foto {
   display: none; 
   position: fixed; 
-  z-index: 1; 
-  padding-top: 100px; 
+  padding-top: 15vh; 
   left: 0;
   top: 0;
   width: 100%; 
@@ -71,14 +88,14 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 }
 
 #subtitulo {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin: auto;
   display: block;
-  width: 80%;
-  max-width: 700px;
+  font-size: 30px;
+  width: 1000px;
   text-align: center;
-  color: #ccc;
+  color: rgb(148, 161, 90);
   padding: 85px 0;
-  height: 150px;
 }
 
 .foto-contenido { 
