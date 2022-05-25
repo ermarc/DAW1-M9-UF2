@@ -1,0 +1,151 @@
+* {
+	margin: 0;
+	padding: 0;
+  scrollbar-color: grey orange;
+}
+
+.return {
+	position: absolute;
+	top: 4vh;
+	left: 7vh;
+	padding: 2vh;
+	padding-left: 3vh;
+	padding-right: 3vh;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	color: white;
+	border-style: solid;
+	border-width: 4px;
+	border-radius: 5vh;
+	border-color: white;
+	text-align: center;
+	font-size: 19px;
+	background-color: burlywood;
+	transform: scale(1.6);
+}
+
+body {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.imagen_lite { 
+    width: 100%;
+    background-color: orange;
+    box-shadow: 1px 0px 20px 12px rgb(29, 29, 29);
+    position: absolute;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 18%;
+    gap: 2%;
+    overflow-x: auto;
+}
+
+::-webkit-scrollbar {
+  height: 0.6vh;
+  background: orange;
+  
+}
+
+::-webkit-scrollbar-thumb {
+  background: grey;
+  transition: 0.2s;
+  -webkit-border-radius: 2ex;
+}
+::-webkit-scrollbar-thumb:hover {
+  transition: 2s;
+  background: rgb(77, 77, 77);
+  -webkit-border-radius: 2ex;
+  
+}
+
+.imagen_lite > img {
+    padding-top: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+    inline-size: 5px;
+    padding-bottom: 2%;
+    width: 100%;
+    border-radius: 2vh;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.imagen_lite > img:hover {
+  opacity: 0.8;
+}
+
+.fondo {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.foto {
+  display: none; 
+  position: fixed; 
+  padding-top: 15vh; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9); 
+}
+
+
+.foto-contenido {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+#subtitulo {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: auto;
+  display: block;
+  font-size: 30px;
+  width: 1000px;
+  text-align: center;
+  color: rgb(148, 161, 90);
+  padding: 85px 0;
+}
+
+.foto-contenido { 
+  animation-timing-function: ease-in-out;
+  animation-name: inicioAnim;
+  animation-duration: 2s;
+}
+
+@keyframes inicioAnim {
+  0%  {
+      transform: scale(0)
+    }
+  55%  {
+    transform: scale(1.2)
+  }
+  100% {
+    transform: scale(1)
+  }
+}
+
+.cerrar {
+  position: absolute;
+  top: 15px;
+  right: 85px;
+  color: #f1f1f1;
+  font-size: 25px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.cerrar:hover {
+    cursor: grab;
+    color: red;
+}
